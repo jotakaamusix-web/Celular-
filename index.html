@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaskazi Safaris — East Africa Itinerary Finder</title>
+<meta name="description" content="Browse ready-made East Africa safari itineraries across Kenya, Tanzania and Uganda, or start planning your own tailor-made trip.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <span>Tailor-made East Africa safaris, planned by people who live here.</span>
+    <a href="#contact">Talk to a safari specialist &rarr;</a>
+  </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap site-header__inner">
+    <a href="#" class="logo">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="34" height="34">
+          <path d="M24 4C13 4 5 13 5 24s8 20 19 20 19-9 19-20S35 4 24 4Z" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M14 30c3-9 7-15 10-19 3 4 7 10 10 19-5 4-15 4-20 0Z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="logo__text">KASKAZI<em>safaris</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#destinations">Destinations</a>
+      <a href="#itineraries" class="is-active">Itineraries</a>
+      <a href="#small-group">Small Group Tours</a>
+      <a href="#camps">Camps &amp; Lodges</a>
+      <a href="#about">About Us</a>
+    </nav>
+
+    <div class="site-header__actions">
+      <a href="#contact" class="btn btn--ghost">Enquire</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero__media" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <p class="eyebrow">Itinerary Finder</p>
+      <h1>Find your perfect<br>East&nbsp;Africa safari</h1>
+      <p class="hero__lead">Ready-made routes across Kenya, Tanzania &amp; Uganda — built by our guides and travel designers, and yours to adapt night by night.</p>
+
+      <form class="finder" id="finderForm">
+        <div class="finder__field">
+          <label for="fDestination">Destination</label>
+          <select id="fDestination">
+            <option value="all">All destinations</option>
+            <option value="kenya">Kenya</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="uganda">Uganda</option>
+          </select>
+        </div>
+        <div class="finder__field">
+          <label for="fDuration">Duration</label>
+          <select id="fDuration">
+            <option value="all">Any length</option>
+            <option value="short">7–9 days</option>
+            <option value="medium">10–12 days</option>
+            <option value="long">13+ days</option>
+          </select>
+        </div>
+        <div class="finder__field">
+          <label for="fStyle">Style</label>
+          <select id="fStyle">
+            <option value="all">Any style</option>
+            <option value="classic">Classic Safari</option>
+            <option value="beach">Bush &amp; Beach</option>
+            <option value="family">Family</option>
+            <option value="multi">Multi-Country</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--primary finder__submit">Search itineraries</button>
+      </form>
+    </div>
+  </section>
+
+  <nav class="breadcrumbs wrap">
+    <a href="#">Home</a> <span>/</span> <span>Itineraries</span>
+  </nav>
+
+  <section class="small-group" id="small-group">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Hosted &amp; shared departures</p>
+          <h2>Small Group Tours</h2>
+          <p class="section-head__lead">Seamless, preplanned journeys hosted by specialist guides and shared with like-minded travellers — book a seat, not a whole trip.</p>
+        </div>
+        <a href="#small-group" class="link-arrow">View all editions &rarr;</a>
+      </div>
+
+      <div class="sgt-grid">
+        <article class="sgt-card">
+          <div class="sgt-card__media sgt-card__media--a" aria-hidden="true"></div>
+          <div class="sgt-card__body">
+            <span class="badge">Max 16 guests</span>
+            <h3>The Signature Edition</h3>
+            <p>An 11-day showcase of northern Tanzania and Kenya's finest reserves, hosted from camp to camp.</p>
+            <span class="sgt-card__days">11 days</span>
+          </div>
+        </article>
+
+        <article class="sgt-card">
+          <div class="sgt-card__media sgt-card__media--b" aria-hidden="true"></div>
+          <div class="sgt-card__body">
+            <span class="badge">Max 12 guests</span>
+            <h3>The Classic Edition</h3>
+            <p>10 days through the icons of northern Tanzania: Serengeti, Ngorongoro and Tarangire.</p>
+            <span class="sgt-card__days">10 days</span>
+          </div>
+        </article>
+
+        <article class="sgt-card">
+          <div class="sgt-card__media sgt-card__media--c" aria-hidden="true"></div>
+          <div class="sgt-card__body">
+            <span class="badge">Max 6 guests</span>
+            <h3>The Untamed Edition</h3>
+            <p>An intimate 11-day departure into the wilder, less-travelled corners of the safari circuit.</p>
+            <span class="sgt-card__days">11 days</span>
+          </div>
+        </article>
+
+        <a href="#small-group" class="sgt-card sgt-card--more">
+          <span class="sgt-card__more-icon" aria-hidden="true">&rarr;</span>
+          <h3>See every departure date</h3>
+          <p>Compare all Small Group Tour editions, dates and prices.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="itineraries" id="itineraries">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">32 itineraries</p>
+          <h2>All safari itineraries</h2>
+          <p class="section-head__lead">Every route below can be booked exactly as planned, or reshuffled with your travel designer.</p>
+        </div>
+        <div class="itineraries__sort">
+          <label for="sortSelect">Sort by</label>
+          <select id="sortSelect">
+            <option value="featured">Featured</option>
+            <option value="days-asc">Duration: shortest first</option>
+            <option value="days-desc">Duration: longest first</option>
+            <option value="price-asc">Price: low to high</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="results-count" id="resultsCount"></p>
+
+      <div class="itin-grid" id="itinGrid"></div>
+
+      <template id="itinCardTpl">
+        <article class="itin-card">
+          <div class="itin-card__media" aria-hidden="true">
+            <span class="itin-card__days"></span>
+          </div>
+          <div class="itin-card__body">
+            <div class="itin-card__countries"></div>
+            <h3 class="itin-card__title"></h3>
+            <p class="itin-card__desc"></p>
+            <div class="itin-card__footer">
+              <div class="itin-card__price">
+                <span class="itin-card__price-label">From</span>
+                <span class="itin-card__price-value"></span>
+                <span class="itin-card__price-note">per person sharing</span>
+              </div>
+              <a href="#" class="btn btn--outline itin-card__cta">View itinerary</a>
+            </div>
+          </div>
+        </article>
+      </template>
+
+      <p class="empty-state" id="emptyState" hidden>No itineraries match those filters yet — try widening your search, or let us build one from scratch.</p>
+    </div>
+  </section>
+
+  <section class="cta-plan" id="contact">
+    <div class="wrap cta-plan__inner">
+      <div>
+        <p class="eyebrow eyebrow--light">Can't find the right fit?</p>
+        <h2>Let's design a trip<br>around exactly what you want</h2>
+        <p>Tell a travel designer your dates, budget and pace — they'll turn one of these routes into something that's entirely yours.</p>
+      </div>
+      <form class="cta-plan__form">
+        <input type="text" placeholder="Full name" required>
+        <input type="email" placeholder="Email address" required>
+        <select>
+          <option>When are you thinking of travelling?</option>
+          <option>Next 3 months</option>
+          <option>3–6 months</option>
+          <option>6–12 months</option>
+          <option>Just exploring ideas</option>
+        </select>
+        <button type="submit" class="btn btn--primary">Start planning</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <span class="logo__text logo__text--footer">KASKAZI<em>safaris</em></span>
+      <p>Independent safari specialists based in East Africa, designing trips across Kenya, Tanzania and Uganda since day one.</p>
+      <div class="footer__social" aria-label="Social media">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Destinations</h4>
+      <a href="#">Kenya</a>
+      <a href="#">Tanzania</a>
+      <a href="#">Uganda</a>
+      <a href="#">Zanzibar</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <a href="#itineraries">Itineraries</a>
+      <a href="#small-group">Small Group Tours</a>
+      <a href="#camps">Camps &amp; Lodges</a>
+      <a href="#">Sustainability</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Company</h4>
+      <a href="#about">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Trade Partners</a>
+    </div>
+
+    <div class="footer__col footer__col--newsletter">
+      <h4>Stay in the loop</h4>
+      <p>Route ideas and camp news, a few times a year.</p>
+      <form class="footer__newsletter">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit" aria-label="Subscribe">&rarr;</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="wrap footer__bottom">
+    <p>&copy; <span id="year"></span> Kaskazi Safaris. All rights reserved.</p>
+    <div class="footer__legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
